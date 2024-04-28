@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"
+      integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <title>Feast Wheels</title>
+  </head>
+  <body>
+
+    <!--================== LOGIN & REGISTRATION =======================-->
+    <section id="registration--login-form">
+      <div class="container">
+        <section id="login--form">
+          <form action="#">
+            <button class="close--button" onclick="closePopup()">
+              <i class="fa-solid fa-square-xmark"></i>
+            </button>
+            <input type="checkbox" id="flip">
+            <div class="cover">
+              <div class="front">
+                <img class="frontImg" src="./Images/frontImg.jpg" alt="">
+              </div>
+            </div>
+            <div class="form-content">
+              <div class="log-form">
+                <div class="title">Login</div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="text"><a href="#">Forgot Password?</a></div>
+                  <div class="button input-box">
+                    <input type="submit" value="Submit">
+                  </div>
+                  <div class="text login-text">
+                    Don't have an account?
+                    <label for="flip">Signup Now</label>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="signup-form">
+                <div class="title">Signup</div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="button input-box">
+                    <input type="submit" value="Submit">
+                  </div>
+                  <div class="text sign-up-text">
+                    Already have an account?
+                    <label for="flip">Login Now</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+
+
+    <!-- NAVBAR -->
+    <header>
+      <div class="container">
+        <div class="header--halves">
+          <div class="nav">
+            <div class="logo">
+              <img src="./assets/logo.png" alt="logo" />
+            </div>
+            <h2>feast <span>wheels</span></h2>
+          </div>
+
+          <div class="delivery--address">
+            <p class="clr--bold"><b>Deliver to:</b></p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#FFB30E"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+            <p class="clr--bold"><b>Current Location</b></p>
+            <p>South City Mall, Kolkata</p>
+          </div>
+
+          <div class="search--login">
+            <div class="search-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#FFB30E"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <p class="search--bold">
+                <input
+                  type="text"
+                  name="search"
+                  id="search--field"
+                  placeholder="Search Food"
+                  autocomplete="off"
+                />
+              </p>
+            </div>
+            <div class="login--box">
+              <button
+                class="btn btn-login"
+                type="submit"
+                onclick="loginFormHandler()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FFB30E"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <!-- HERO BANNER -->
+    <section class="hero--banner">
+      <div class="container">
+        <div class="hero__banner--halves">
+          <div class="content--left">
+            <div class="content--left__title">
+              <h1>Are you starving?</h1>
+              <p>
+                Within a few clicks, find meals that are accessible near you
+              </p>
+            </div>
+            <div class="order--card">
+              <div class="btn--group">
+                <button type="button" class="btn btn-primary delivery">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#F17228"
+                    font-weight="bold"
+                    class="bi bi-bicycle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"
+                    /></svg
+                  >Delivery
+                </button>
+                <button type="button" class="btn btn-primary pickup">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#757575"
+                    font-weight="900"
+                    class="bi bi-bag-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+                    /></svg
+                  >Pickup
+                </button>
+              </div>
+
+              <div class="bottom--card">
+                <div class="text--field">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#FF7474"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                    />
+                  </svg>
+                  <div class="input--field">
+                    <input
+                      type="text"
+                      name="location"
+                      id="location"
+                      placeholder="Enter your address"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="find--food-btn">
+                  <button type="button" class="btn btn-primary find--btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#FFF"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                      />
+                    </svg>
+                    Find Food
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image--right">
+            <img src="./assets/hero--img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLASH DEALS -->
+
+    <section class="section cmn--section flash--deals">
+      <div class="container">
+        <div class="flash--deal--flex">
+          <div class="flash--deals--box">
+            <div class="flash--img">
+              <img src="./assets/flash--deals/1.png" alt="" />
+              <h2>
+                15%
+                <!-- <div class="discount--flash">
+                                <span>%</span>
+                            <span>OFF</span>
+                            </div> -->
+              </h2>
+            </div>
+            <div class="flash--text">
+              <h3>Greys Vage</h3>
+              <h3 class="color--changer">6 Days remaining</h3>
+            </div>
+          </div>
+          <div class="flash--deals--box">
+            <div class="flash--img">
+              <img src="./assets/flash--deals/2.png" alt="" />
+              <h2>10%</h2>
+            </div>
+
+            <div class="flash--text">
+              <h3>Greys Vage</h3>
+              <h3 class="color--changer">6 Days remaining</h3>
+            </div>
+          </div>
+          <div class="flash--deals--box">
+            <div class="flash--img">
+              <img src="./assets/flash--deals/3.png" alt="" />
+              <h2>25%</h2>
+            </div>
+
+            <div class="flash--text">
+              <h3>Greys Vage</h3>
+              <h3 class="color--changer">6 Days remaining</h3>
+            </div>
+          </div>
+          <div class="flash--deals--box">
+            <div class="flash--img">
+              <img src="./assets/flash--deals/4.png" alt="" />
+              <h2>20%</h2>
+            </div>
+
+            <div class="flash--text">
+              <h3>Greys Vage</h3>
+              <h3 class="color--changer">6 Days remaining</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Does It Work -->
+
+    <section class="section cmn--section how--it_work">
+      <div class="container">
+        <div class="how--text">
+          <h2>How does it work</h2>
+        </div>
+
+        <div class="icons--grid">
+          <div class="icons--details">
+            <div class="icons--img">
+              <img src="./assets/how--it--works/Icons-1.png" alt="" />
+            </div>
+            <div class="icons--content">
+              <h3>Select location</h3>
+              <p>Choose the location where your food will be delivered.</p>
+            </div>
+          </div>
+
+          <div class="icons--details">
+            <div class="icons--img">
+              <img src="./assets/how--it--works/Icons-2.png" alt="" />
+            </div>
+            <div class="icons--content">
+              <h3>Choose order</h3>
+              <p>Check over hundreds of menus to pick your favorite food.</p>
+            </div>
+          </div>
+
+          <div class="icons--details">
+            <div class="icons--img">
+              <img src="./assets/how--it--works/Icons-3.png" alt="" />
+            </div>
+            <div class="icons--content">
+              <h3>Pay advanced</h3>
+              <p>
+                It's quick, safe, and simple. Select several methods of payment.
+              </p>
+            </div>
+          </div>
+
+          <div class="icons--details">
+            <div class="icons--img">
+              <img src="./assets/how--it--works/Icons-4.png" alt="" />
+            </div>
+            <div class="icons--content">
+              <h3>Enjoy meals</h3>
+              <p>Food is made and delivered directly to your home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR ITEMS -->
+
+    <section class="section cmn--section popular--items">
+      <div class="container">
+        <div class="popular--text">
+          <h2>Popular Items</h2>
+        </div>
+
+        <div class="popular--item_slider">
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/1.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Cheese Burger</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Burger Arena</h3>
+              </div>
+              <h3><span>&#x20B9;</span>388</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/2.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Toffe's Cake</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Top Sticks</h3>
+              </div>
+              <h3><span>&#x20B9;</span>350</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/3.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Dancake</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Cake World</h3>
+              </div>
+              <h3><span>&#x20B9;</span>190</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/4.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Crispy Sandwich</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Fastfood Dine</h3>
+              </div>
+              <h3><span>&#x20B9;</span>300</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/5.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Thai Soup</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Foody man</h3>
+              </div>
+              <h3><span>&#x20B9;</span>279</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/1.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Cheese Burger</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Burger Arena</h3>
+              </div>
+              <h3><span>&#x20B9;</span>388</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/2.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Toffe's Cake</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Top Sticks</h3>
+              </div>
+              <h3><span>&#x20B9;</span>350</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/3.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Dancake</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Cake World</h3>
+              </div>
+              <h3><span>&#x20B9;</span>190</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/4.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Crispy Sandwich</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Fastfood Dine</h3>
+              </div>
+              <h3><span>&#x20B9;</span>300</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+
+          <div class="image--single">
+            <div class="image--item">
+              <img src="./assets/popular--item/5.png" alt="slider" />
+            </div>
+            <div class="image--content">
+              <h3>Thai Soup</h3>
+              <div class="food--shop">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#FF7474"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                <h3>Foody man</h3>
+              </div>
+              <h3><span>&#x20B9;</span>279</h3>
+            </div>
+            <a class="popular--btn" href="#">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="section cmn--section feature--restaurants">
+      <div class="container">
+        <div class="restaurants--text">
+          <h2>Featured Restaurants</h2>
+        </div>
+
+        <div class="featured--grid_box">
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/1.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 20% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/1.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Foodworld</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  46
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/2.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 15% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/2.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Pizzahub</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  40
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/3.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/3.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Donuts hut</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  20
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/4.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 15% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/4.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Donuts hut</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  50
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/5.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/5.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Ruby Tuesday</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  26
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/6.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 25% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/6.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Kolkata Fried Chicken</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  53
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/7.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/7.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Red Square</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  45
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/8.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/8.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Taco Bell</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  35
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="featured--grid_box section--hidden" id="sectionHidden">
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/3.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/3.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Donuts hut</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  20
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/2.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 15% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/2.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Pizzahu3</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  40
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/4.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 15% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/4.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Donuts hut</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  50
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/1.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 20% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/1.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Foodworld</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  46
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/5.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/5.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Ruby Tuesday</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  26
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/8.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/8.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Taco Bell</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  35
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/7.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 10% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/7.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Red Square</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  45
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button
+                type="button"
+                class="btn btn-primary btn--time btn--open--now"
+              >
+                Open Now
+              </button>
+            </div>
+          </div>
+
+          <div class="featured--items">
+            <div class="featured--image">
+              <img
+                src="./assets/feature--restaurants/6.png"
+                alt="image--featured"
+              />
+              <div class="featured--badge">
+                <button type="button" class="btn btn-info btn--discount">
+                  <i class="fa-solid fa-tag"></i> 25% off
+                </button>
+                <button type="button" class="btn btn-info btn--speed">
+                  <i class="fa-solid fa-clock"></i> Fast
+                </button>
+              </div>
+            </div>
+            <div class="featured--logo">
+              <img src="./assets/feature--restaurants/logos/6.png" alt="logo" />
+              <div class="company--rating">
+                <h2>Kolkata Fried Chicken</h2>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  53
+                </p>
+              </div>
+            </div>
+            <div class="featured--time">
+              <button type="button" class="btn btn-primary btn--time">
+                Opens tomorrow
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="view--btn">
+          <button
+            type="button"
+            class="btn btn-warning"
+            id="toggleButton"
+            onclick="clickHandler()"
+          >
+            View All
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="cmn--section search--by--food">
+      <div class="container">
+        <div class="search--btn--group">
+          <div class="search--food--text">
+            <h2>Search by Food</h2>
+          </div>
+          <!-- <div class="search--btns">
+                    <h2>View All <i class="fa-solid fa-angle-right"></i></h2>
+                </div> -->
+        </div>
+
+        <div class="search--grid--box">
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/1.png" alt="search--food" />
+            </div>
+            <h2>Pizza</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/2.png" alt="search--food" />
+            </div>
+            <h2>Burger</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/3.png" alt="search--food" />
+            </div>
+            <h2>Noodles</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/4.png" alt="search--food" />
+            </div>
+            <h2>Sub-sandwich</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/5.png" alt="search--food" />
+            </div>
+            <h2>Chowmein</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/6.png" alt="search--food" />
+            </div>
+            <h2>Steak</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/1.png" alt="search--food" />
+            </div>
+            <h2>Pizza</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/2.png" alt="search--food" />
+            </div>
+            <h2>Burger</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/3.png" alt="search--food" />
+            </div>
+            <h2>Noodles</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/4.png" alt="search--food" />
+            </div>
+            <h2>Sub-sandwich</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/5.png" alt="search--food" />
+            </div>
+            <h2>Chowmein</h2>
+          </div>
+          <div class="search--grid--image">
+            <div class="search--img">
+              <img src="./assets/search--by--food/6.png" alt="search--food" />
+            </div>
+            <h2>Steak</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features--section">
+      <div class="card">
+        <div class="card--items">
+          <div class="card--items--img">
+            <img
+              src="./assets/search--by--food/featured--section/1.png"
+              alt="logo"
+            />
+          </div>
+          <h2>Daily Discounts</h2>
+        </div>
+        <span class="hr--line"></span>
+        <div class="card--items">
+          <div class="card--items--img">
+            <img
+              src="./assets/search--by--food/featured--section/2.png"
+              alt="logo"
+            />
+          </div>
+          <h2>Live Tracking</h2>
+        </div>
+        <span class="hr--line"></span>
+        <div class="card--items">
+          <div class="card--items--img">
+            <img
+              src="./assets/search--by--food/featured--section/3.png"
+              alt="logo"
+            />
+          </div>
+          <h2>Quick Delivery</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="app--download--section">
+      <div class="container">
+        <div class="app--download">
+          <div class="app--download_img">
+            <img
+              src="./assets/search--by--food/app--download/image--dwnld.png"
+              alt="download"
+            />
+          </div>
+
+          <div class="app--download--text">
+            <div class="app--content">
+              <h1>Install the app</h1>
+              <p>
+                It's never been easier to order food. Look for the finest
+                discounts and you'll be lost in a world of delectable food.
+              </p>
+            </div>
+            <div class="app--content--flex">
+              <div class="app--content--image">
+                <div class="app--content__img">
+                  <img
+                    src="./assets/search--by--food/app--download/Google Play logo.png"
+                    alt="google"
+                  />
+                </div>
+                <div class="app-content__text">
+                  <p>GET IT ON</p>
+                  <h3>Google Play</h3>
+                </div>
+              </div>
+              <div class="app--content--image2">
+                <div class="app--content__img">
+                  <img
+                    src="./assets/search--by--food/app--download/Apple logo.png"
+                    alt="ios"
+                  />
+                </div>
+                <div class="app-content__text">
+                  <p>Download on the</p>
+                  <h3>App Store</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="cmn--section details--card">
+      <div class="container">
+        <div class="details--card--parent">
+          <div class="deatils--card--single">
+            <div class="details--card_content">
+              <div class="deatils--card--subcontent">
+                <h2>
+                  Best deals
+                  <span>Crispy Sandwiches</span>
+                </h2>
+                <p>
+                  Enjoy the large size of sandwiches. Complete perfect slice of
+                  sandwiches.
+                </p>
+              </div>
+              <a href="#" class="details--btn"
+                >Proceed to Order <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="details--card--image">
+              <img src="./assets/details/1.png" alt="details" />
+            </div>
+          </div>
+
+          <div class="deatils--card--single card--reverse">
+            <div class="details--card_content">
+              <div class="deatils--card--subcontent">
+                <h2>
+                  Celebrate parties with
+                  <span>Fried Chicken</span>
+                </h2>
+                <p>
+                  Get the best fried chicken smeared with a lip smacking lemon
+                  chili flavor. Check out best deals for fried chicken.
+                </p>
+              </div>
+              <a href="#" class="details--btn"
+                >Proceed to Order <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="details--card--image">
+              <img src="./assets/details/2.png" alt="details" />
+            </div>
+          </div>
+
+          <div class="deatils--card--single">
+            <div class="details--card_content">
+              <div class="deatils--card--subcontent">
+                <h2>
+                  Wanna eat hot & spicy
+                  <span>Pizza?</span>
+                </h2>
+                <p>
+                  Pair up with a friend and enjoy the hot and crispy pizza pops.
+                  Try it with the best deals.
+                </p>
+              </div>
+              <a href="#" class="details--btn"
+                >Proceed to Order <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="details--card--image">
+              <img src="./assets/details/3.png" alt="details" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta--section">
+      <div class="container">
+        <div class="cta--content">
+          <h2>Are you ready to order with the best deals?</h2>
+          <a href="#" class="cta--btn"
+            >Proceed to Order <i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <section class="footer--section">
+          <h2>Our top cities</h2>
+          <div class="our--top--grid">
+            <div class="our--top--items">
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscription--section">
+          <div class="menu--footer">
+            <div class="our--top--items">
+              <h3>Company</h3>
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <h3>Contact</h3>
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+
+            <div class="our--top--items">
+              <h3>Legal</h3>
+              <ul>
+                <li>San Francisco</li>
+                <li>Miami</li>
+                <li>San Diego</li>
+                <li>San Diego</li>
+                <li>Long Beach</li>
+              </ul>
+            </div>
+          </div>
+          <section class="social--links">
+           <h3>Follow Us</h3>
+           <div class="social--media--links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+           </div>
+           <p>Receive exclusive offers in your mailbox</p>
+           <div class="subscribe--btn">
+            <input type="text" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+           </div>
+          </section>
+        </section>
+
+        <section class="copyright--section">
+          <p>All rights reserved &#169 <span>Ranjima Ghosh, 2024</span></p>
+          <p>Made with <span id="heart"><i class="fa-solid fa-heart"></i></span> by Ranjima Ghosh</p>
+        </section>
+
+      </div>
+    </footer>
+    
+
+    <!-- GOOGLE PLACES API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXP2_wVDuiIeuxDqN00dhGt-3RfJJTRNU&libraries=places"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var inputElement = document.getElementById("location");
+        var autocomplete = new google.maps.places.Autocomplete(inputElement, {
+          types: ["geocode"],
+        });
+
+        autocomplete.addListener("place_changed", function () {
+          var place = autocomplete.getPlace();
+          console.log("Selected Place:", place);
+        });
+      });
+    </script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS FILE -->
+    <script src="./script.js"></script>
+  </body>
+</html>
