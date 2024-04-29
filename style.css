@@ -1717,4 +1717,9 @@ section.copyright--section p span#heart {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  section.copyright--section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
